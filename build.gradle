@@ -1,0 +1,8 @@
+group = 'edu.mssm.pharm.maayanlab.List2Networks'
+description = 'List2Networks'
+dependencies {
+  compile project(':common:common-core')
+  compile project(':common:common-math')
+  compile project(':common:common-swing')
+    testCompile group: 'junit', name: 'junit', version:'3.8.1'
+}
