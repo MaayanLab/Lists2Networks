@@ -399,7 +399,7 @@ public class L2NPanel extends JPanel {
 	
 	class Task extends SwingWorker<Void, Void> {
 		@Override
-		protected Void doInBackground() throws Exception {
+		protected Void doInBackground() {
 			app.run(UIUtils.getTextAreaText(inputTextArea));
 			
 			try {
