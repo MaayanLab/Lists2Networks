@@ -40,8 +40,8 @@ artifacts {
 }
 
 task downloadResources(type: Download) {
-  src 'http://amp.pharm.mssm.edu/lincs-playground/index.php/s/xq55Gwfyy6zsD7P/download'
-  dest new File(buildDir, 'KEA.zip')
+  src 'http://amp.pharm.mssm.edu/lincs-playground/index.php/s/G9zZwYFOiQs4U1u/download'
+  dest new File(buildDir, 'L2N.zip')
   overwrite false
 }
 
@@ -49,7 +49,7 @@ task downloadAndUnzipResources(type: Copy) {
   from zipTree(downloadResources.dest)
   into "${buildDir}/resources"
   eachFile { f ->
-    f.path = f.path.replaceFirst('KEA/', '')
+    f.path = f.path.replaceFirst('L2N/', '')
   }
   includeEmptyDirs false
 }
